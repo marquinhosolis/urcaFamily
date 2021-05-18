@@ -1,0 +1,104 @@
+footer{
+    position: relative;
+    padding: 30px 0;
+    background: $navyBlue;
+    color: #fff;
+    text-align: center;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    .footerLogo{
+        margin-bottom: 20px;
+        @media(min-width: 768px){
+            margin: 0 30px;
+        }
+    }
+    .addressFooter{
+        margin-bottom: 20px;
+        address{
+            margin-bottom: 20px;
+            font-size: 16px;
+            a{
+                color: #fff;
+                text-decoration: none;
+                
+            }
+            @media(min-width: 768px){
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+        }
+        .socialFooter{
+            margin-bottom: 20px;
+            a{
+                margin:0 4px;
+                color: $lightBlue;
+                transition: all 0.25s linear;
+                font-size: 22px;
+                &:hover{
+                    color: #ed1846;
+                }
+            }
+            @media(min-width: 768px){
+                margin-bottom: 0;
+            }
+        }
+        @media(min-width: 768px){
+            margin: 0 30px;
+            text-align: left;
+        }
+    }
+    
+    .footerForm{
+        margin-bottom: 20px;
+        p{
+            margin-bottom: 10px;
+        }
+        form{
+            position: relative;
+        }
+        input{
+            width: 100%;
+            background: none;
+            border: solid $lightBlue 1px;
+            border-radius: 5px;
+            padding: 8px 15px; 
+            color: #fff;
+            font-size: 14px;
+            font-family: futura-pt, sans-serif;
+            &::placeholder{
+                color: #fff;
+                opacity: 1;
+            }
+        }
+        button{
+            position: absolute;
+            top: 5px;
+            right: 2px;
+            border: 0;
+            background: none;
+            color: $lightBlue;
+            font-size: 20px;
+        }
+        @media(min-width: 768px){
+            margin: 0 30px;
+        }
+    }
+
+    .dpNav{
+        @media(min-width: 768px){
+           position: absolute;
+           right: 10px;
+           bottom: 10px;
+        }
+    }
+    
+    @media(min-width: 768px){
+        padding: 80px 0;
+     }
+}

@@ -1,0 +1,258 @@
+.homeCover{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .homeCoverText{
+        padding-top: 50px;
+        text-align: center;
+        h1{
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 24px;
+            strong{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            @media(min-width: 768px){
+                margin-bottom: 15px;
+                font-size: 36px;
+                strong{
+                    font-size: 52px;
+                }
+            }
+            @media(min-width: 1200px){
+                font-size: 48px;
+                strong{
+                    font-size: 62px;
+                }
+            }
+        }
+        .btn-white{
+            display: none;
+            @media(min-width: 768px){
+                display: inline-block;
+            }
+            @media(min-width: 1024px){
+                font-size: 24px;
+            }
+        }
+        @media(min-width: 768px){
+            position: relative;
+            top: 40px;
+            text-align: left;
+            padding-left: 50px;
+        }
+    }
+    .homeCoverImage{
+        position: relative;
+        z-index: 2;
+        bottom: -40px;
+        align-self: flex-end;
+        @media(min-width: 768px){
+            width: 70%;
+        }
+    }
+}
+
+.homeIntro{
+    position: relative;
+    padding: 40px 0;
+    padding-top: 70px;
+    .container{
+        padding: 0;
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+    .homeIntroText{
+        padding: 0 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        h2{
+            color: $navyBlue;
+            font-size: 24px;
+            font-weight: 700;
+            @media(min-width: 1024px){
+                font-size: 36px;
+            }
+        }
+        .homeIntroCopy{
+            margin: 30px 0;
+            text-align: left;
+            font-size: 18px;
+            color: #2d2c2c;
+            @media(min-width: 768px){
+                margin-bottom: 0;
+            }
+            @media(min-width: 1024px){
+                font-size: 18px;
+            }
+        }
+        @media(min-width: 768px){
+            width: 50%;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+    .homeIntroImage{
+        img{
+            display: block;
+        }
+        @media(min-width: 768px){
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 0;
+    }
+}
+
+.exploreProductsHome{
+    padding: 50px 0;
+    padding-bottom: 0;
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: top right;
+    .container{
+        padding: 0;
+    }
+    .sectionTitle{
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    .productsHome{
+        a{
+            display: block;
+            position: relative;
+            margin-bottom: 2px;
+            img{
+                display: block;
+                width: 100%;
+            }
+            .productsHomeLabel{
+                width: 80%;
+                max-width: 400px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 10px 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                background: $lightBlue;
+            }
+            @media(min-width:768px){
+                width: 50%;
+                max-width: 450px;
+                margin: 0 10px;
+            }
+        }
+        @media(min-width:768px){
+            display:flex;
+            justify-content: center;
+        }
+    }
+    @media(min-width:768px){
+        padding: 80px 0;
+        background-image: url(../images/bubble.png);
+    }
+}
+
+.whyChoseHome{
+    padding: 50px 0;
+    text-align: center;
+    .reasonsHome{
+        margin-bottom: 15px;
+        .reasonHome{
+            margin-bottom: 25px;
+            padding: 0 15px;
+            h3{
+                color: $navyBlue;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;   
+                color: #282828;
+            }
+            @media(min-width:768px){
+                max-width: 300px;
+            }
+        }
+        @media(min-width:768px){
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.lookingUrcaHome{
+    padding: 50px 0;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+    text-align: center;
+    background-color: #ededed;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .sectionTitle{
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .lookingUrcaHomeText{
+        margin-bottom: 20px;
+    }
+    .lookingUrcaHomeImage{
+        img{
+            display: block;
+        }
+        @media(min-width: 768px){
+            align-self: flex-end;
+        }
+    }
+    
+}
+
+.homeCta{
+    padding: 50px 0;
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-align: center;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    h2{
+        color: $navyBlue;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 20px;
+        @media(min-width: 768px){
+            margin: 0 20px;
+            font-size: 30px;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 80px 0;
+        background-image: url(../images/bubble.png);
+    }
+}

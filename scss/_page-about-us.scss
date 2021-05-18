@@ -1,0 +1,112 @@
+.coverAboutUs{
+    background-image: url(../images/bubbles-bg.png);
+    h1{
+        padding: 50px 0;
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.aboutContent{
+    .aboutArea{
+        padding: 50px 0;
+        .container{
+            @media(min-width:768px){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .aboutAreaImage{
+            margin-bottom: 20px;
+            @media(min-width:768px){
+                width: 48%;
+            }
+        }
+        .aboutAreaCopy{
+            h2{
+                margin-bottom: 15px;
+                color: $navyBlue;
+                font-size: 28px;
+                font-weight: 700;
+                max-width: 450px;
+                @media(min-width:1024px){
+                    font-size: 36px;
+                }
+            }
+            .aboutAreaCopyText{
+                color: #2d2c2c;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            @media(min-width:768px){
+                width: 48%;
+            }
+        }
+        
+        &:nth-child(odd){
+            background-image: url(../images/bubbles-isolated.png);
+            background-repeat: no-repeat;
+            background-position: top left;
+            .aboutAreaImage{
+                
+                @media(max-width: 767px){
+                    padding-left: 30px; 
+                    position: relative;
+                    right: -15px;
+                }
+            }
+            @media(min-width: 768px){
+                background-size: auto;
+            }
+        }
+        &:nth-child(even){
+            background-image: url(../images/bubble.png);
+            background-color: #ededed;
+            background-repeat: no-repeat;
+            background-position: top right;
+            .container{
+                flex-direction: row-reverse;
+            }
+            .aboutAreaImage{
+                
+                @media(max-width: 767px){
+                    padding-right: 30px; 
+                    position: relative;
+                    left: -15px;
+                }
+            }
+        }
+    }
+}
+
+.aboutBubbles{
+    padding: 50px 0;
+    .container{
+        @media(min-width:768px){
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+    .aboutwhy{
+        margin-bottom: 30px;
+        text-align: center;
+        .aboutwhyImage{
+            margin-bottom: 10px;
+        }
+        .aboutwhyText{
+            max-width: 250px;
+            margin: auto;
+            color: $navyBlue;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        @media(min-width:768px){
+            width: 30%;
+        }
+    }
+}
